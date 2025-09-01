@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Comprehensive Website Design Architecture</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fcomprehens3577back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Header Section -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="currentColor"/>
+                            <path d="M8 12h16v2H8v-2zm0 4h16v2H8v-2zm0 4h12v2H8v-2z" fill="white"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-semibold text-text-primary">DesignArch</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors">Home</a>
+                    <a href="about.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors">About</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors">Services</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="about.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    <div class="pt-4">
+                        <a href="contact.html" class="btn-primary w-full text-center">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-accent-50 overflow-hidden">
+        <div class="absolute inset-0 bg-white/50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6">
+                    Our Story of 
+                    <span class="text-gradient">Digital Innovation</span>
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Founded on the belief that exceptional design can transform businesses, we've been crafting digital experiences that inspire, engage, and deliver results for over a decade.
+                </p>
+                <div class="flex justify-center">
+                    <a href="contact.html" class="btn-primary text-lg px-8 py-4">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-6">
+                        Building Digital Dreams Since 2013
+                    </h2>
+                    <div class="space-y-6 text-text-secondary">
+                        <p class="text-lg">
+                            What started as a small team of passionate designers and developers has grown into a comprehensive digital agency that partners with businesses of all sizes to create meaningful online experiences.
+                        </p>
+                        <p>
+                            Our journey began when our founders, Sarah Chen and Michael Rodriguez, recognized a gap in the market for design agencies that truly understood both the technical and creative aspects of web development. They envisioned a company that would bridge this divide, creating websites that were not only visually stunning but also strategically sound and technically robust.
+                        </p>
+                        <p>
+                            Today, we've helped over 500 businesses transform their digital presence, from innovative startups to established enterprises. Our approach remains the same: listen deeply, design thoughtfully, and deliver exceptionally.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-elevated">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Our team collaborating on design projects" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent rounded-full opacity-20 animate-pulse"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary rounded-full opacity-10 animate-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-24 section-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+                    Our Mission & Vision
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Driven by purpose, guided by values, and committed to excellence in everything we do.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="card-elevated text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-4">Our Mission</h3>
+                    <p class="text-text-secondary text-lg">
+                        To empower businesses with exceptional digital experiences that drive growth, enhance user engagement, and create lasting value through innovative design and strategic thinking.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="card-elevated text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-4">Our Vision</h3>
+                    <p class="text-text-secondary text-lg">
+                        To be the leading digital design agency that sets the standard for creativity, innovation, and client success in the ever-evolving digital landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Timeline -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+                    Our Journey Through Time
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Key milestones that have shaped our growth and defined our commitment to excellence.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-border"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-16">
+                    <!-- 2013 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">Company Founded</h3>
+                                <p class="text-text-secondary">Sarah Chen and Michael Rodriguez establish DesignArch with a vision to bridge the gap between design and technology.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="text-primary font-semibold text-lg">2013</div>
+                        </div>
+                    </div>
+
+                    <!-- 2016 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="text-primary font-semibold text-lg">2016</div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-md"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">First Major Award</h3>
+                                <p class="text-text-secondary">Recognized as "Best Web Design Agency" by Digital Excellence Awards, marking our emergence as industry leaders.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2019 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">Team Expansion</h3>
+                                <p class="text-text-secondary">Grew from 5 to 25 team members, expanding our capabilities in UX research, development, and digital strategy.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-success rounded-full border-4 border-white shadow-md"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="text-primary font-semibold text-lg">2019</div>
+                        </div>
+                    </div>
+
+                    <!-- 2022 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="text-primary font-semibold text-lg">2022</div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">500th Project Milestone</h3>
+                                <p class="text-text-secondary">Celebrated completing our 500th successful project, serving clients across 15 countries and various industries.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="card">
+                                <h3 class="text-xl font-semibold text-text-primary mb-2">Innovation Lab Launch</h3>
+                                <p class="text-text-secondary">Launched our Innovation Lab focusing on AI-driven design tools and emerging technologies for next-generation web experiences.</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-md"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="text-primary font-semibold text-lg">2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-24 section-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+                    Our Impact in Numbers
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    These achievements reflect our commitment to delivering exceptional results for our clients.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">500+</div>
+                    <div class="text-lg font-semibold text-text-primary mb-2">Projects Completed</div>
+                    <p class="text-text-secondary">Successful websites and digital experiences delivered across various industries.</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-accent mb-2">98%</div>
+                    <div class="text-lg font-semibold text-text-primary mb-2">Client Satisfaction</div>
+                    <p class="text-text-secondary">Our clients consistently rate our services as exceptional and recommend us to others.</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-success mb-2">15</div>
+                    <div class="text-lg font-semibold text-text-primary mb-2">Countries Served</div>
+                    <p class="text-text-secondary">Global reach with clients spanning across multiple continents and markets.</p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-primary mb-2">12</div>
+                    <div class="text-lg font-semibold text-text-primary mb-2">Years Experience</div>
+                    <p class="text-text-secondary">Over a decade of expertise in digital design and web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+                    Meet Our Leadership Team
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    The visionary leaders driving our mission to create exceptional digital experiences.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="card-elevated group text-center hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.pixabay.com/photo/2017/08/01/01/33/beanie-2562646_960_720.jpg" alt="Sarah Chen - Co-Founder & CEO" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Sarah Chen</h3>
+                    <p class="text-primary font-medium mb-3">Co-Founder & CEO</p>
+                    <p class="text-text-secondary mb-4">Strategic visionary with 15+ years in digital design. Sarah leads our creative direction and client relationships with passion for innovation.</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="card-elevated group text-center hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Michael Rodriguez - Co-Founder & CTO" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Michael Rodriguez</h3>
+                    <p class="text-primary font-medium mb-3">Co-Founder & CTO</p>
+                    <p class="text-text-secondary mb-4">Technical architect and innovation leader. Michael ensures our solutions are built with cutting-edge technology and scalable architecture.</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="card-elevated group text-center hover:scale-105 transition-all duration-300">
+                    <div class="aspect-square rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Emily Johnson - Creative Director" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Emily Johnson</h3>
+                    <p class="text-primary font-medium mb-3">Creative Director</p>
+                    <p class="text-text-secondary mb-4">Award-winning designer with expertise in brand identity and user experience. Emily leads our creative team with innovative design thinking.</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="py-24 section-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+                    Awards & Recognition
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Our commitment to excellence has been recognized by industry leaders and prestigious organizations.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Award 1 -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Best Web Design Agency</h3>
+                    <p class="text-text-secondary text-sm">Digital Excellence Awards 2024</p>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Innovation in UX Design</h3>
+                    <p class="text-text-secondary text-sm">UX Design Awards 2023</p>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Top Security Implementation</h3>
+                    <p class="text-text-secondary text-sm">Web Security Council 2023</p>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Creative Excellence</h3>
+                    <p class="text-text-secondary text-sm">Creative Industry Awards 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
+                    Our Core Values
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    The principles that guide every decision we make and every project we undertake.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="card hover:shadow-elevated transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Client-Centric</h3>
+                    <p class="text-text-secondary">Every decision we make is guided by what's best for our clients' success and long-term growth.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="card hover:shadow-elevated transition-all duration-300">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Innovation</h3>
+                    <p class="text-text-secondary">We continuously explore new technologies and methodologies to deliver cutting-edge solutions.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="card hover:shadow-elevated transition-all duration-300">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Quality</h3>
+                    <p class="text-text-secondary">We maintain the highest standards in every aspect of our work, from design to development to delivery.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="card hover:shadow-elevated transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Collaboration</h3>
+                    <p class="text-text-secondary">We believe the best results come from working closely with our clients as true partners.</p>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="card hover:shadow-elevated transition-all duration-300">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Agility</h3>
+                    <p class="text-text-secondary">We adapt quickly to changing requirements and market conditions to deliver optimal results.</p>
+                </div>
+
+                <!-- Value 6 -->
+                <div class="card hover:shadow-elevated transition-all duration-300">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Transparency</h3>
+                    <p class="text-text-secondary">Open communication and honest feedback are the foundation of our client relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-primary to-primary-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                Ready to Work with Our Team?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Let's discuss how our experience, values, and passion for excellence can help bring your vision to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors text-lg">
+                    Get In Touch
+                </a>
+                <a href="services.html" class="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition-colors text-lg">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="currentColor"/>
+                            <path d="M8 12h16v2H8v-2zm0 4h16v2H8v-2zm0 4h12v2H8v-2z" fill="white"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-semibold">DesignArch</span>
+                    </div>
+                    <p class="text-secondary-300 mb-6 max-w-md">
+                        We create comprehensive website architectures that transform your vision into digital reality through strategic design and cutting-edge technology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="homepage.html" class="text-secondary-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-secondary-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-secondary-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-secondary-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="text-secondary-300">hello@designarch.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span class="text-secondary-300">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-primary mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span class="text-secondary-300">123 Design Street<br />Creative City, CC 12345</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-600 mt-12 pt-8 text-center">
+                <p class="text-secondary-300">© 2025 DesignArch. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = event.target.closest('button');
+            
+            if (!menuButton && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animation-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, .card-elevated, section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
